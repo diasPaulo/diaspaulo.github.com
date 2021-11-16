@@ -18,6 +18,28 @@ html{
     scroll-behavior: smooth;
 }
 
+#nav nav .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2rem;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
 #chkmenu{
     display: none;
 }
@@ -28,7 +50,7 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
+} 
 
 .menu .slash{
     background-color: var(--color1);
@@ -117,6 +139,10 @@ article > .content{
     margin-left: auto;
 }
 
+#nav nav .close{
+    display: none;
+}
+
 #nav nav ul{
     position: absolute;
     top: 3rem;
@@ -132,6 +158,14 @@ article > .content{
 
 #chkmenu:checked ~ nav ul{
     display: flex;
+}
+
+#chkmenu:checked ~ nav .close{
+    display: initial;
+}
+
+#chkmenu:checked ~ nav .menu{
+    display: none;
 }
 
 #nav nav ul li{
@@ -397,7 +431,11 @@ article > .content{
         margin: auto;
     }
 
-    .menu{
+    /* .menu{
+        display: none;
+    } */
+
+    #nav nav .menu{
         display: none;
     }
 
