@@ -4,214 +4,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Paulo Dias</title>
+    <title>Paulo Dias</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/f0ce1ee997.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/all.min.css">
 </head>
 <body>
-    <header id="nav">
-        <a href="./index.html"> 
-            <h1>
-                <img src="./images/avatar.png" alt="Avatar representativo de Paulo Dias">
-                Paulo Dias
-            </h1>
-        </a>
-        <input type="checkbox" name="chkmenu" id="chkmenu">
-        <nav>
-            <label for="chkmenu">
-                <!-- <div class="menu">
-                    <div class="slash"></div>
-                    <div class="slash"></div>
-                    <div class="slash"></div>
-                </div> -->
-                <span class="material-icons menu">
-                    menu
-                </span>
-                <span class="material-icons close">
-                    close
-                </span>
-            </label>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </nav>
+    <header>
+        <div id="blur"></div>
+        <div id="header">
+            <i class="fas fa-bars" id="bars"></i>
+            <nav id="navbar">
+                <a href="#home" id="active">Home</a>
+                <a href="#projects">Projetos</a>
+                <a href="#about">Sobre</a>
+                <a href="#contact">Contatos</a>
+            </nav>
+            <i class="fas fa-adjust" id="darkMode"></i>
+        </div>
     </header>
     <main>
         <section id="home">
+            <h1>
+                Olá, sou <br> Paulo Dias
+            </h1>
+            <nav class="socials">
+                <a href="https://github.com/diasPaulo/" target="_blank">
+                    <i class="fab fa-github"></i>
+                    <span class="social-link">GitHub</span>
+                </a>
+                <a href="https://www.facebook.com/paulo.dias.5439087/" target="_blank">
+                    <i class="fab fa-facebook-square"></i>
+                    <span class="social-link">Facebook</span>
+                </a>
+                <a href="https://www.linkedin.com/in/paulo-dias-8b8bb522/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                    <span class="social-link">Linkedin</span>
+                </a>
+                <a href="https://t.me/DiasPH" target="_blank">
+                    <i class="fab fa-telegram-plane"></i>
+                    <span class="social-link">Telegram</span>
+                </a>
+            </nav>
+            <div class="buttons">
+                <a href="#contact">Diga olá!</a>
+                <a href="#projects">Meu trabalhos <span class="material-icons">expand_more</span></a>
+            </div>        
+        </section>
+        <section id="projects">
             <article>
-                <div class="presentation">
-                    <p id="salute">Olá, eu sou</p>
-                    <h1>Paulo Dias</h1><br>
-                    <nav class="social">
-                        <a href="https://github.com/diasPaulo/" target="_blank">
-                            <i class="fab fa-github"></i>
-                            <span class="social-link">GitHub</span>
-                        </a>
-                        <a href="https://www.facebook.com/paulo.dias.5439087/" target="_blank">
-                            <i class="fab fa-facebook-square"></i>
-                            <span class="social-link">Facebook</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/paulo-dias-8b8bb522/" target="_blank">
-                            <i class="fab fa-linkedin-in"></i>
-                            <span class="social-link">Linkedin</span>
-                        </a>
-                        <a href="https://t.me/DiasPH" target="_blank">
-                            <i class="fab fa-telegram-plane"></i>
-                            <span class="social-link">Telegram</span>
-                        </a>
-                    </nav>
-                </div>
+                <h2>Pizzaria da Nave</h2>
+                <p>O projeto Pizzaria da Nave foi realizado ao final do curso <em>Crie seu primeiro site com HTML + CSS</em> fornecido pela Nave do Conhecimento e teve por objetivo aplicar os conhecimentos adquiridos durante todo o curso.</p>
+                <a href="#">Saiba mais<span class="material-icons">keyboard_arrow_right</span></a>
+                <img src="./images/mockup-nave.png" alt="mockup do site Pizzaria da Nave">
             </article>
         </section>
         <section id="about">
-            <div class="content">
-                <header>
-                    <h1>Sobre mim</h1>
-                    <p>Mestre em Modelagem Computacional pela UERJ e Bacharel em Matemática Aplicada e Computacional pela UFRRJ. Atualmente cursando Técnico em Informática em IFSuldeMinas e Desenhista de Páginas Web no SENAI - Roberto Mange. Atuo como Técnico de Informática na Fundação Municipal de Educação - Niterói.</p>
-                </header>
-                <article>
-                    <h2>Minha habilidades</h2>
-                    <ul>
-                        <li>
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap">
-                        </li>
-                        <li>
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3">
-                        </li>
-                        <li>
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5">
-                        </li>
-                        <li>
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript">
-                        </li>
-                        <li>
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python"> 
-                        </li>
-                    </ul>
-                </article>
-            </div>            
-        </section>
-        <section id="projects">
-            <div class="content">
-                <header>
-                    <h1>Projetos</h1>
-                </header>
-                <article>
-                    <header>
-                        <h2>Pizzaria da Nave</h2>
-                    </header>
-                    <figure>
-                        <img src="./images/mockup-nave.png" alt="Mockup com arte do projeto Pizzaria da Nave"><br>
-                    </figure>
-                    <div class="content">
-                        <p>O projeto Pizzaria da Nave foi realizado ao final do curso <em>Crie seu primeiro site com HTML + CSS</em> fornecido pela Nave do Conhecimento e teve por objetivo aplicar os conhecimentos adquiridos durante todo o curso.</p>
-                        <a href="https://diaspaulo.github.io/pizzaria-nave/" target="_blank"><button type="button">Veja o Projeto</button></a>
-                    </div>
-                </article>
-                <!-- <article>
-                    <header>
-                        <h2>Projeto 2</h2>
-                    </header>
-                    <figure>
-                        <img src="./images/mockup.png" alt="Mockup com arte do projeto 2"><br>
-                    </figure>
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, est. Sed ut voluptas tenetur voluptatum corrupti harum dolor? Suscipit dolore accusamus quasi nulla perspiciatis tenetur, inventore non. Alias, deleniti sequi.</p>
-                        <a href="#"><button type="button">Veja o Projeto</button></a>
-                    </div>
-                </article>
-                <article>
-                    <header>
-                        <h2>Projeto 3</h2>
-                    </header>
-                    <figure>
-                        <img src="./images/mockup.png" alt="Mockup com arte do projeto 3"><br>
-                    </figure>
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, est. Sed ut voluptas tenetur voluptatum corrupti harum dolor? Suscipit dolore accusamus quasi nulla perspiciatis tenetur, inventore non. Alias, deleniti sequi.</p>
-                        <a href="#"><button type="button">Veja o Projeto</button></a>
-                    </div>
-                </article>
-                <article>
-                    <header>
-                        <h2>Projeto 4</h2>
-                    </header>
-                    <figure>
-                        <img src="./images/mockup.png" alt="Mockup com arte do projeto 4"><br>
-                    </figure>
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, est. Sed ut voluptas tenetur voluptatum corrupti harum dolor? Suscipit dolore accusamus quasi nulla perspiciatis tenetur, inventore non. Alias, deleniti sequi.</p>
-                        <a href="#"><button type="button">Veja o Projeto</button></a>
-                    </div>
-                </article> -->
-            </div>            
-        </section>
-        <section id="contact">
-            <div class="content">
-                <header>
-                    <h1>Contato</h1>
-                </header>
-                <div class="left">
-                    <div class="social-contact">
-                        <article>
-                            <a href="https://github.com/diasPaulo/" target="_blank">
-                                <i class="fab fa-github"></i>
-                                <p>GitHub</p>
-                            </a>                    
-                        </article>
-                        <article>
-                            <a href="https://www.facebook.com/paulo.dias.5439087/" target="_blank">
-                                <i class="fab fa-facebook-square"></i>
-                                <p>Facebook</p>
-                            </a>
-                        </article>
-                    </div>
-                    <div class="social-contact">
-                        <article>
-                            <a href="https://www.linkedin.com/in/paulo-dias-8b8bb522/" target="_blank">
-                                <i class="fab fa-linkedin-in"></i>
-                                <p>Linkedin</p>
-                            </a>
-                        </article>
-                        <article>
-                            <a href="https://t.me/DiasPH" target="_blank">
-                                <i class="fab fa-telegram-plane"></i>
-                                <p>Telegram</p>
-                            </a>
-                        </article>
-                    </div>
-                    
-                    
-                </div>
-                <div class="right">
-                    <form action="https://formsubmit.co/dad979bcacbf3abf3bea115fb0d4deb8" method="post" accept-charset="UTF-8">
-                        <input type="text" name="_honey" style="display:none">
-                        <input type="hidden" name="_template" value="box">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="https://diaspaulo.github.io/#contact">
-                        <label for="name">
-                            Nome:
-                        </label>
-                        <input type="text" name="name" id="name" value="" minlength="3" required>
-                        <label for="_replyto">
-                            E-mail:
-                        </label>
-                        <input type="email" name="email" id="_replyto" value="" required>
-                        <input type="text" name="_subject" id="_subject" value="Contato diaspaulo.github.io" style="display:none">
-                        <label for="comment">
-                            Mensagem:
-                        </label>
-                        <textarea name="comment" id="comment" cols="30" rows="10" minlength="3" required></textarea>
-                        <button type="submit">Enviar Mensagem</button>
-                    </form>
-                </div>
+            <h2>Sobre Mim</h2>
+            <p>Mestre em Modelagem Computacional pela UERJ e Bacharel em Matemática Aplicada e Computacional pela UFRRJ. Atualmente cursando Técnico em Informática em IFSuldeMinas e Desenhista de Páginas Web no SENAI - Roberto Mange. Atuo como Técnico de Informática na Fundação Municipal de Educação - Niterói.</p>
+
+            <h3>Minhas habilidades</h3>
+            <div class="abilities">
+                <i class="fab fa-bootstrap"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-js-square"></i>
+                <i class="fab fa-python"></i>
             </div>
         </section>
+        <section id="contact">
+            <h2>Contato</h2>
+
+            <nav class="socials">
+                <a href="https://github.com/diasPaulo/" target="_blank">
+                    <i class="fab fa-github"></i>
+                    <span class="social-link">GitHub</span>
+                </a>
+                <a href="https://www.facebook.com/paulo.dias.5439087/" target="_blank">
+                    <i class="fab fa-facebook-square"></i>
+                    <span class="social-link">Facebook</span>
+                </a>
+                <a href="https://www.linkedin.com/in/paulo-dias-8b8bb522/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                    <span class="social-link">Linkedin</span>
+                </a>
+                <a href="https://t.me/DiasPH" target="_blank">
+                    <i class="fab fa-telegram-plane"></i>
+                    <span class="social-link">Telegram</span>
+                </a>
+            </nav>
+            
+            <form action="https://formsubmit.co/dad979bcacbf3abf3bea115fb0d4deb8" method="post" accept-charset="UTF-8">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_template" value="box">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://diaspaulo.github.io/">
+                <label for="name">
+                    Nome:
+                </label>
+                <input type="text" name="name" id="name" value="" minlength="3" required>
+                <label for="_replyto">
+                    E-mail:
+                </label>
+                <input type="email" name="email" id="_replyto" value="" required>
+                <input type="hidden" name="_subject" id="_subject" value="Texto enviado pelo site https://diaspaulo.github.io/">
+                <label for="comment">
+                    Mensagem:
+                </label>
+                <textarea name="comment" id="comment" cols="30" rows="10" minlength="3" required></textarea>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
     </main>
+    <script src="./script/script.js"></script>
 </body>
 </html>
